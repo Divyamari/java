@@ -18,7 +18,33 @@ public class SyncExample {
 		
 		t.start();
 		t1.start();*/
-		
 	}
-
+}
+public class SyncSample {
+	
+}
+	//synchronized  void print (int num) { //sync method
+	synchronized static void print (int num) { //sync static method
+		for (int i=1; i<=5; i++) {
+			System.out.println(num*i);
+			try {
+				Thread.sleep(500);
+				}
+			catch(Exception e) {
+				System.out.println(e);
+			}
+		}
+	}
+}
+class Thread1 extends Thread{
+	
+	public void run() {
+		SyncSample.print(3);
+	}
+}
+class Thread2 extends Thread{
+	
+	public void run() {
+		SyncSample.print(5);
+	}
 }
