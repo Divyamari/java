@@ -1,5 +1,39 @@
 package threads;
 
+public class Data {
+	
+	int i;
+	 boolean valueset = false;
+	 
+	 synchronized void produce(int i ) {
+		 if(valueset)
+			 try {
+				 wait();
+			 }
+		 catch(Exception e ) {
+			 System.out.println(e);
+		 }
+		 this.i = i;
+		 valueset = true;
+		 System.out.println("Data production done "+i);
+		 notify();
+	 }
+		 synchronized int consume() {
+			 if(!valueset)
+				 try {
+					 wait();
+				 }
+			 catch(Exception e) {
+				 System.out.println(e);
+			}
+			 valueset = false;
+			 System.out.println("Data consumed "+i);
+			 notify();
+			 return i;
+		 }
+}
+
+
 	class producer extends Thread {
 		Data d;
 		public producer(Data d) {
