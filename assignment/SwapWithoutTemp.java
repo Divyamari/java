@@ -3,7 +3,7 @@ public class SwapWithoutTemp {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		/*String a = "Divya";
+		String a = "Divya";
 		String b = "Abi";
 		System.out.println("Before swap: " +a+ " " +b );
 		a= a+b;
@@ -12,8 +12,8 @@ public class SwapWithoutTemp {
 		System.out.println("After swap: " +a+ " " +b );
 	}
 
-}*/
-		int a=10;
+}
+		/*int a=10;
 		int b=20;
 		System.out.println("a="+a);
 		System.out.println("b="+b);
@@ -23,4 +23,4 @@ public class SwapWithoutTemp {
 		System.out.println("a="+a);
 		System.out.println("b="+b);
 		}
-		}
+		}*/
