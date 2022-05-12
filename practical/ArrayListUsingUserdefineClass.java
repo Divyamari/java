@@ -29,3 +29,19 @@ public class ArrayListUsingUserdefineClass {
 	}
 
 }
+public class ArrayBank {
+	long accountno;
+	String customername;
+	double balance;
+	int customerage;
+	
+	public ArrayBank(long accountno, String customername, double balance, int customerage) {
+		this.accountno;
+		this.customername;
+		this.balance;
+		this.customerage;
+		
+	}
+
+}
+
