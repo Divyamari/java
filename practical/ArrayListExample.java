@@ -23,7 +23,7 @@ public class ArrayListExample {
 		al.add("Lotus");
 		al.add(5,"Lavender");
 
-		//printing arrylist objects
+		//printing arraylist objects
 		System.out.println(al);
 		System.out.println("Size of arrayList : " +al.size());
 		
@@ -37,6 +37,5 @@ public class ArrayListExample {
 		System.out.println(al);
 		System.out.println("Size of arrayList : " +al.size());
 		System.out.println("Element of index value is : " +al.get(6));
-	}
-
+}
 }
