@@ -48,3 +48,65 @@ public class ComparatorExample {
 	}
 	}
 }
+public class Book {
+	String BookName;
+	String BookAuthor;
+	int BookPrice;
+	
+	public Book(String BookNmae, String BookAuthor, int BookPrice) {
+		super();
+		this.BookName = BookName;
+		this.BookAuthor = BookAuthor;
+		this.BookPrice = BookPrice;
+		}
+
+	public String getBookName() {
+		return BookName;
+	}
+
+	public void setBookName(String bookName) {
+		BookName = bookName;
+	}
+
+	public String getBookAuthor() {
+		return BookAuthor;
+	}
+
+	public void setBookAuthor(String bookAuthor) {
+		BookAuthor = bookAuthor;
+	}
+
+	public int getBookPrice() {
+		return BookPrice;
+	}
+
+	public void setBookPrice(int bookPrice) {
+		BookPrice = bookPrice;
+	}
+	
+	}
+public class BookPriceCompare implements Comparator {
+	
+	public int compare (Object o1,Object o2) {
+		Book b1 = (Book) o1;
+		Book b2 = (Book) o2;
+
+			if(b1.BookPrice == b2.BookPrice)
+				return 0;
+			else if(b1.BookPrice > b2.BookPrice)
+				return 1;
+			else
+				return -1;
+}
+}
+public class BookNameCompare implements Comparator {
+	public int compare(Object o1, Object o2) {
+		Book b1 = (Book) o1;
+		Book b2 = (Book) o2;
+		
+		return b1.BookName.compareTo(b2.BookName);
+	}
+}
+
+
+
