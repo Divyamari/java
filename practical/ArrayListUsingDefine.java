@@ -34,4 +34,27 @@ public class ArrayListUsingDefine {
 		}
 	}
 }
+public class Bank implements Comparable<Bank>{
+	
+	long accountNo;
+	String customerName;
+	double Balance;
+	int customerAge;
+	
+	public Bank(long accountNo, String customerName, double Balance, int customerAge) {
+		super();
+		this.accountNo = accountNo;
+		this.customerName = customerName;
+		this.Balance = Balance;
+		this.customerAge = customerAge;
+}
+	public int compareTo(Bank b) {
+		if(customerAge == b.customerAge)
+			return 0;
+		else if (customerAge > b.customerAge)
+			return 1;
+		else
+			return -1;
+	}
+}
 
