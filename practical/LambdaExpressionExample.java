@@ -12,5 +12,11 @@ public class LambdaExpressionExample {
 		System.out.println(d.add(40,50));
 		//d.add();
 	}
-
 }
+
+@FunctionalInterface
+public interface FunctionalInterfaceExample {
+	//void add();
+	int add(int a, int b);
+}
+
