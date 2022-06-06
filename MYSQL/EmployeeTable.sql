@@ -26,6 +26,8 @@ SALARY numeric(8,2),
  select* from employee where DEPARTMENT_ID = 60;
  select * from employee where LAST_NAME = 'king';
  select  job_id from employee;
+ select LAST_NAME,SALARY,SALARY + 300 as 'increased_salary' from employee;
+ select LAST_NAME,SALARY,SALARY + COMM_PCT + 100 as 'annual_compensation' from employee;
  select * from employee where COMM_PCT >=0.1;
  select * from employee where COMM_PCT;
  select Employee_id, Department_id , Salary from employee where SALARY >5000;
